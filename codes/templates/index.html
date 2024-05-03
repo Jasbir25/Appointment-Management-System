@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Appointment System</title>
+  </head>
+  <body>
+    <h1>Appointment System</h1>
+    <form action="/add_doctor" method="post">
+      <label for="doctor_name">Doctor Name:</label><br>
+      <input type="text" id="doctor_name" name="doctor_name"><br>
+      <label for="start_time">Start Time:</label><br>
+      <input type="text" id="start_time" name="start_time"><br>
+      <label for="end_time">End Time:</label><br>
+      <input type="text" id="end_time" name="end_time"><br>
+      <input type="submit" value="Add Doctor">
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <form action="/add_appointment" method="post">
+      <label for="appointment_date">Appointment Date:</label><br>
+      <input type="text" id="appointment_date" name="appointment_date"><br>
+      <label for="appointment_time">Appointment Time:</label><br>
+      <input type="text" id="appointment_time" name="appointment_time"><br>
+      <label for="patient_name">Patient Name:</label><br>
+      <input type="text" id="patient_name" name="patient_name"><br>
+      <label for="reason">Reason:</label><br>
+      <input type="text" id="reason" name="reason"><br>
+      <label for="doctor_id">Doctor ID:</label><br>
+      <input type="number" id="doctor_id" name="doctor_id"><br>
+      <input type="submit" value="Add Appointment">
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <a href="/display_doctors">Display Doctors</a>
+    <a href="/display_appointments">Display Appointments</a>
+    <a href="/modify_appointments">Modify Appointments</a>
+  </body>
+</html>
