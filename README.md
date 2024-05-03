@@ -19,10 +19,6 @@ Navigate to the project directory:
 
 cd appointment-management-system
 
-Install dependencies:
-
-pip install -r requirements.txt
-
 Run the application:
 
 python code.py (inside codes directory).
