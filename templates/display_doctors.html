@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display Doctors</title>
+</head>
+<body>
+    <h1>Doctors</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Start Time</th>
+            <th>End Time</th>
+            <th>Delete</th>
+        </tr>
+        {% for row in rows %}
+            <tr>
+                <td>{{ row['id'] }}</td>
+                <td>{{ row['name'] }}</td>
+                <td>{{ row['start_time'] }}</td>
+                <td>{{ row['end_time'] }}</td>
+                <td>
+                    <form method="POST" action="/delete_doctor">
+                        <input type="hidden" name="doctor_id" value="{{ row['id'] }}">
+                        <button type="submit">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

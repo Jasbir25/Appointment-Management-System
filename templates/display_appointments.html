@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display Appointments</title>
+</head>
+<body>
+    <h1>Appointments</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Appointment Date</th>
+            <th>Appointment Time</th>
+            <th>Patient Name</th>
+            <th>Reason</th>
+            <th>Doctor ID</th>
+            <th>Delete</th>
+        </tr>
+        {% for row in rows %}
+            <tr>
+                <td>{{ row['id'] }}</td>
+                <td>{{ row['appointment_date'] }}</td>
+                <td>{{ row['appointment_time'] }}</td>
+                <td>{{ row['patient_name'] }}</td>
+                <td>{{ row['reason'] }}</td>
+                <td>{{ row['doctor_id'] }}</td>
+                <td>
+                    <form method="POST" action="/delete_appointment">
+                        <input type="hidden" name="appointment_id" value="{{ row['id'] }}">
+                        <button type="submit">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
