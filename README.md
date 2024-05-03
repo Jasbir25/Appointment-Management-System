@@ -28,12 +28,19 @@ The application will be accessible at http://localhost:5000 by default.
 Usage:
 
 Open your web browser and navigate to http://localhost:5000.
+
 You'll be directed to the dashboard where you can add doctors or add appointments.
+
 To view all appointments, click on the "Display Appointments" link provided below.
+
 To view all doctors, click on the "Display Doctors" link provided below.
+
 To modify all appointments, click on the "Modify Appointments" link provided below.
+
 You can delete particular doctor from the button provided at the last column of each doctor.
+
 Similarly, you can delete particular appointment from the button provided at the last column of each appointment record.
+
 
 Contributions are welcome! If you find any bugs or have suggestions for improvements, please feel free to open an issue or submit a pull request.
 
