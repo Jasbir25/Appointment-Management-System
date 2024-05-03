@@ -13,7 +13,7 @@ Installation:
 
 Clone the repository:
 
-git clone https://github.com/your_username/appointment-management-system.git
+git clone https://github.com/Jasbir25/appointment-management-system.git
 
 Navigate to the project directory:
 
