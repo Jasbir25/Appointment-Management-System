@@ -46,6 +46,6 @@ Contributions are welcome! If you find any bugs or have suggestions for improvem
 
 Credits:
 
-This project was created by Jasbir Singh. Special thanks to the Flask and SQLite communities for their fantastic tools and resources.
+This project was created by Jasbir Singh, Aditya, and Vamshi.
 
 Thank you for using the Appointment Management System! We hope it helps you stay organized and on top of your schedule.
